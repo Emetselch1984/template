@@ -1,0 +1,55 @@
+<section id="animation">
+  <div class="animate-title">
+    <span class="char">A</span>
+    <span class="char">N</span>
+    <span class="char">I</span>
+    <span class="char">M</span>
+    <span class="char">A</span>
+    <span class="char">T</span>
+    <span class="char">I</span>
+    <span class="char">O</span>
+    <span class="char">N</span>
+  </div>
+  <button onclick="document.querySelector('.animate-title').classList.toggle('inview')">Animation</button>
+</section>
+<section id="appear">
+  <button onclick="document.querySelector('.appear').classList.toggle('inview')">appear</button>
+  <div class="appear up">
+    <div class="item">
+      <%= image_tag 'animation/images/image-1.jpg',class: 'img' %>
+    </div>
+    <div class="item">
+      <%= image_tag 'animation/images/image-1.jpg',class: 'img' %>
+    </div>
+    <div class="appear">
+      <div class="item">
+        <%= image_tag 'animation/images/image-1.jpg',class: 'img' %>
+      </div>
+      <div class="item">
+        <%= image_tag 'animation/images/image-1.jpg',class: 'img' %>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag 'animation/images/image-1.jpg',class: 'img' %>
+    </div>
+    <div class="item">
+      <%= image_tag 'animation/images/image-1.jpg',class: 'img' %>
+    </div>
+    <div class="appear">
+      <div class="item">
+        <%= image_tag 'animation/images/image-1.jpg',class: 'img' %>
+      </div>
+      <div class="item">
+        <%= image_tag 'animation/images/image-1.jpg',class: 'img' %>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="cover-slide">
+  <div id="container">
+    <div class="cover-slide hover-darken">
+      <%= image_tag 'animation/images/image-1.jpg',class: 'img img-zoom' %>
+    </div>
+  </div>
+  <button onclick="document.querySelector('.cover-slide').classList.toggle('inview')">click</button>
+</section>

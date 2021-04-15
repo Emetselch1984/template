@@ -1,0 +1,283 @@
+.img{
+  max-width: 100%;
+  vertical-align: bottom;
+}
+section#animation-java{
+  .item{
+    position: relative;
+    height: 100vh;
+    background-color: $cTeal;
+
+    &:nth-child(2) {
+      background-color: $cMediumvioletred;
+    }
+    &:nth-child(3) {
+      background-color: $cOrange ;
+    }
+  }
+}
+
+.animate-title-java{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  font-size: 2em;
+
+  &.inview {
+    opacity: 1;
+
+    & .char {
+      display: inline-block;
+    }
+  }
+
+  & .char {
+    opacity: 0;
+  }
+}
+
+.animate-title-java.inview .char {
+  @include animation(
+          $name: kf-animate-chars,
+          $duration: 0.5s,
+          $timing-function: cubic-bezier(0.39, 1.57, 0.58, 1),
+          $fill-mode: both
+  );
+
+  @for $i from 1 through 30 {
+    &:nth-child(#{$i}) {
+      animation-delay: $i * 0.04s;
+    }
+  }
+}
+
+
+
+section#observer{
+  width: 100%;
+  height: 300vh;
+  background-color: rgb(143, 143, 143);
+  .child{
+    position: absolute;
+    top: 150vh;
+    background-color: red;
+    width: 100px;
+    height: 400px;
+    &.inview{
+      background-color: green;
+    }
+  }
+}
+#margin{
+  padding: 300px 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  div{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+  }
+}
+.cover-slide{
+  position: relative;
+  overflow: hidden;
+  &::after{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #eaebe6;
+    opacity: 0;
+  }
+  &.inview{
+    &::after{
+      opacity: 1;
+      @include animation(
+              $name: kf-cover-slide,
+              $duration: 1.6s,
+              $timing-function: ease-in-out,
+              $fill-mode: forwards
+      );
+    }
+  }
+}
+.img-zoom{
+  opacity: 0;
+  .inview &{
+    opacity: 1;
+    transition: transform 0.3s ease;
+    @include animation(
+            $name: kf-img-show,
+            $duration: 1.6s,
+            $timing-function: ease-in-out,
+            $fill-mode: normal
+    );
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+.hover-darken{
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    transition: background-color 0.3s ease;
+  }
+  &:hover::before {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+section#animation{
+  background-color: teal;
+  height: 100vh;
+  position: relative;
+}
+.animate-title{
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2em;
+  color: white;
+  opacity: 0;
+  &.inview{
+    opacity: 1;
+    .char {
+      display: inline-block;
+
+      @include animation(
+              $name: kf-animate-chars,
+              $duration: 0.5s,
+                //cubic-bezierの値は画面を見ながら変えていく
+              $timing-function: cubic-bezier(2, 3, 0.58, 1),
+              $fill-mode: both
+      );
+      @for $i from 1 through 9 {
+        &:nth-child(#{$i}) {
+          animation-delay: $i * 0.04s;
+        }
+      }
+    }
+  }
+}
+
+section#spinner {
+  text-align: center;
+
+  #container {
+    div {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      background-color: black;
+      border-radius: 50%;
+      animation: sk-bouncedelay 1.4s infinite;
+      @for $i from 1 through 2 {
+        &:nth-child(#{$i}) {
+          animation-delay: -0.32s / $i;
+        }
+      }
+    }
+  }
+  .rect{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    @include animation($name: sk-bouncedelay2);
+
+  }
+  .paused {
+    animation-play-state: paused;
+  }
+  #various-buttons{
+    display: flex;
+    justify-content: center;
+    .item{
+      flex-basis: 18%;
+      .spinner {
+        width: 40px;
+        height: 40px;
+        background-color: #333;
+        margin: 100px auto;
+        @include animation(
+                $name: sk-rotateplane,
+                $duration: 1.2s,
+                $iteration-count: infinite,
+                $timing-function: ease-in-out
+        );
+      }
+      .double-spinner {
+        width: 400px;
+        height: 400px;
+        margin: 100px auto;
+        position: relative;
+        div {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          background-color: red;
+          opacity: 0.6;
+          top: 0;
+          left: 0;
+          @include animation(
+                  $name: sk-bounce,
+                  $duration: 2s,
+                  $iteration-count: infinite,
+                  $timing-function: ease-in-out
+          );
+          //&:nth-child(2) {
+          //  animation-delay: -1s;
+          //}
+          @for $i from 1 through 5 {
+            &:nth-child(#{$i}) {
+              animation-delay: -1s / $i;
+            }
+          }
+        }
+      }
+      .rect-spinner {
+        margin: 100px auto;
+        width: 50px;
+        height: 40px;
+        text-align: center;
+        letter-spacing: -2px;
+
+        div{
+          background-color: #333;
+          height: 100%;
+          width: 6px;
+          display: inline-block;
+          @include animation(
+                  $name: sk-stretchdelay,
+                  $duration: 1.2s,
+                  $iteration-count: infinite,
+                  $timing-function: ease-in-out
+          );
+          @for $i from 1 through 5 {
+            &:nth-child(#{$i}) {
+              animation-delay: -1.3s + $i * 0.1s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
