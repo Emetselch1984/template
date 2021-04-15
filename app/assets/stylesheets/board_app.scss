@@ -1,0 +1,151 @@
+.promo-block--mheight-300 {
+  min-height: 300px;
+}
+.promo-block--mheight-600 {
+  min-height: 600px;
+}
+#promo_image {
+  background-image: url("board_app/images/img1.jpg");
+}
+.overlay__inner {
+  position: relative;
+  z-index: 1;
+}
+.image-center {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translate3d(0, -50%, 0);
+}
+.image-center-low {
+  position: absolute;
+  top: 23%;
+  left: 0;
+  right: 0;
+  transform: translate3d(0, -23%, 0);
+}
+@media (max-width: 1199px) {
+  .promo-block {
+    background-attachment: fixed;
+  }
+}.top-font {
+   color: #EFEFEF;
+ }
+div#login-form {
+  width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: solid 4px #888844;
+  background-color: #fafafa;
+
+  h1 {
+    background-color: transparent;
+    color: #888844;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  form {
+    div {
+      padding: 10px;
+      label {
+        display: block;
+        padding: 6px 0;
+      }
+      input[type="text"], input[type="password"] {
+        padding: 10px;
+        width: 360px;
+      }
+      input[type="submit"] {
+        padding: 10px 20px;
+      }
+      input[type="checkbox"]+label { display: inline-block }
+    }
+  }
+}
+.section-profile-cover{
+  height: 580px;
+  background-size: cover;
+  background-position: center center;
+  img {
+    width: 100%;
+  }
+}
+.section-profile{
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #fafafa;
+}
+.card-profile-image{
+  position: relative;
+  img{
+    max-width: 180px;
+    border-radius: .25rem;
+    @extend .shadow;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-33%);
+    transition: $transition-base;
+    &:hover{
+      transform: translate(-50%,-83%);
+    }
+  }
+}
+.mt--150{
+  margin-top: -150px;
+}
+.mt--300{
+  margin-top: -300px;
+}
+.mt--450{
+  margin-top: -450px;
+}
+.btn-default {
+  color: #fff;
+  background-color: green;
+  bordier-color: #08101c;
+}
+.btn-fs{
+  font-size: 0.75rem;
+}
+section#profile-page{
+  .item{
+    padding: .875rem;
+  }
+  @media (max-width: 575.98px) {
+    .item {
+      margin-top: 110px;
+    }
+  }
+}
+.card-profile-stats{
+  padding: 1rem 0;
+  div{
+    text-align: center;
+    padding: .875rem;
+    margin-right: 1rem;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+.heading {
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: block;
+}
+.description {
+  font-size: .875rem;
+  color: #adb5bd;
+}
+.section-shaped{
+  position: relative;
+  overflow: hidden;
+}
+
+.border-top {
+  border-top: 0.0625rem solid #e9ecef !important;
+}
