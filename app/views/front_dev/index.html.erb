@@ -1,0 +1,139 @@
+<header class="header">
+  <div class="header__inner appear up inview">
+    <div class="logo item">
+      <%= image_tag "front_dev/logo.svg",class: "logo__img" %>
+      <span class="logo__stay">Stay</span>
+      <span class="logo__world">World</span>
+    </div>
+    <nav class="header__nav">
+      <ul class="header__ul">
+        <li class="header__li item"><a href="#">Service</a></li>
+        <li class="header__li item"><a href="#">Company</a></li>
+        <li class="header__li item">
+          <a class="btn filled" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="mobile-menu__btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<main>
+  <section class="travel">
+    <div class="travel__inner">
+      <div class="travel__img cover-slide inview">
+        <%= image_tag "front_dev/image-travel.jpg",class:"img-zoom" %>
+      </div>
+      <div class="travel__texts appear left inview">
+        <div class="travel__texts-inner">
+          <div class="travel__title main-title item">
+            <span class="purple">Travel</span>
+            <span>the world</span>
+          </div>
+          <div class="travel__sub sub-title item">世界中を旅しよう</div>
+          <div class="travel__description item">
+            <p>
+              世界１５０ヶ国で<br />利用できる民泊サービスです。
+            </p>
+            <p>あなたの望む宿がきっと見つかります。</p>
+          </div>
+          <div class="travel__btn item">
+            <button class="btn filled">もっと詳しく</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="houses">
+    <div>
+      <h2 class="main-title tween-animate-title inview">Find Your House</h2>
+      <p class="sub-title tween-animate-title inview">お気に入りの宿泊先を見つけましょう</p>
+    </div>
+    <div class="houses__inner">
+      <div class="houses__item">
+        <div class="cover-slide hover-darken inview">
+          <%= image_tag "front_dev/villa-1.jpg",class: "bg-imz-zoom img-bg50" %>
+        </div>
+        <p class="houses__title">House 1</p>
+      </div>
+      <div class="houses__item">
+        <div class="cover-slide hover-darken inview">
+          <%= image_tag "front_dev/villa-1.jpg",class: "bg-imz-zoom img-bg50" %>
+        </div>
+        <p class="houses__title">House 1</p>
+      </div>
+      <div class="houses__item">
+        <div class="cover-slide hover-darken inview">
+          <%= image_tag "front_dev/villa-1.jpg",class: "bg-imz-zoom img-bg50" %>
+        </div>
+        <p class="houses__title">House 1</p>
+      </div>            <div class="houses__item">
+      <div class="cover-slide hover-darken inview">
+        <%= image_tag "front_dev/villa-1.jpg",class: "bg-imz-zoom img-bg50" %>
+      </div>
+      <p class="houses__title">House 1</p>
+    </div>
+      <div class="houses__item">
+        <div class="cover-slide hover-darken inview">
+          <%= image_tag "front_dev/villa-1.jpg",class: "bg-imz-zoom img-bg50" %>
+        </div>
+        <p class="houses__title">House 1</p>
+      </div>
+      <div class="houses__item">
+        <div class="cover-slide hover-darken inview">
+          <%= image_tag "front_dev/villa-1.jpg",class: "bg-imz-zoom img-bg50" %>
+        </div>
+        <p class="houses__title">House 1</p>
+      </div>
+      <div class="houses__btn appear up inview">
+        <button class="btn slide-bg item ">もっと詳しく</button>
+      </div>
+    </div>
+  </section>
+  <section class="popular">
+    <div class="popular__header">
+      <h2 class="main-title tween-animate-title inview">Popular Place</h2>
+      <p class="sub-title tween-animate-title inview">人気の観光地で宿泊先を見つけましょう</p>
+    </div>
+    <div class="popular__inner appear up inview">
+      <div class="popular__container">
+        <div class="popular__item item">
+          <div class="popular__img">
+            <%= image_tag "front_dev/image-1.jpg" %>
+          </div>
+          <div class="popular__title">パリ</div>
+        </div>
+        <div class="popular__item item">
+          <div class="popular__img">
+            <%= image_tag "front_dev/image-1.jpg" %>
+          </div>
+          <div class="popular__title">パリ</div>
+        </div>              <div class="popular__item item">
+        <div class="popular__img">
+          <%= image_tag "front_dev/image-1.jpg" %>
+        </div>
+        <div class="popular__title">パリ</div>
+      </div>
+        <div class="popular__item item">
+          <div class="popular__img">
+            <%= image_tag "front_dev/image-1.jpg" %>
+          </div>
+          <div class="popular__title">パリ</div>
+        </div>
+        <div class="popular__btn appear up inview">
+          <button class="btn cover-3d item">
+                        <span>
+                          一覧から探す
+                        </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<div class="text-center">
+  <%= link_to "戻る",root_path %>
+</div>

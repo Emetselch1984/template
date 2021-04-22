@@ -1,0 +1,740 @@
+section.rings {
+  line-height: 1.7;
+  font-size: 16px;
+  font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif ;
+  color: #000;
+  a {
+    &:link {
+     color: #3585b7;
+    }
+    &:visited {
+     color: #6252B7;
+    }
+    &:hover {
+      text-decoration: none;
+      color: #555;
+    }
+  }
+  header {
+    display: flex;
+    h1 {
+      margin: 25px 0 0 20px;
+    }
+    nav {
+      margin: 0 0 0 auto;
+      ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 20px 0;
+        li {
+          a,
+          a:link,
+          a:visited {
+            color: #000;
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+          }
+          a:hover {
+           color: #888;
+          }
+        }
+      }
+    }
+  }
+  main {
+    .inner {
+      width: 990px;
+      margin: 50px auto;
+    }
+    h2 {
+      color: #7f6666;
+      margin: 50px 0 20px;
+      font-weight: normal;
+      font-size: 25px;
+    }
+    p {
+      margin: 0 0 15px;
+    }
+    dl {
+      width: 100%;
+      dt {
+        float: left;
+        clear: both;
+        padding: 10px 0;
+        color: #998484;
+      }
+      dd {
+        border-bottom: solid 1px #ccc;
+        margin: 0;
+        padding: 10px 0 10px 15%;
+      }
+    }
+    .title {
+     background: #f4e3e3;
+      padding: 45px;
+      h1 {
+        line-height: 1;
+        font-size: 45px;
+        color: #7f6666;
+        margin: 0;
+      }
+      ol {
+        list-style-type: none;
+        display: flex;
+        margin: 20px 0 0;
+        padding: 0;
+        li {
+          font-size: 13px;
+          &:after {
+            margin: 0 5px 0 10px;
+            content: "<";
+          }
+          &:last-child:after {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+  .home {
+    .visual {
+      background: url("rings/visual.jpg") no-repeat center top;
+      height: 550px;
+      padding: 200px 50px 50px;
+      box-sizing: border-box;
+      p {
+       color: #7f6666;
+        &.catch {
+          font-size: 45px;
+        }
+      }
+    }
+    section {
+      display: flex;
+      margin-top: 50px;
+      div {
+        padding: 0 40px 0 0;
+      }
+      &:first-child {
+        flex-direction: row-reverse;
+        div {
+          padding: 0 0 0 40px;
+        }
+      }
+    }
+  }
+ .guide {
+   .about {
+     display: flex;
+     div {
+       width: 50%;
+     }
+   }
+   dl {
+    font-size: 18px;
+     dd {
+       border: none;
+       padding-left: 5em;
+     }
+   }
+   table {
+     width: 100%;
+     text-align: center;
+    &,th,td {
+      border-collapse: collapse;
+      border: solid 1px #ccc;
+    }
+     th,td {
+       padding: 5px;
+     }
+     th {
+       color: #998484;
+       background: #f7f0f0;
+     }
+   }
+ }
+  .profile {
+    display: flex;
+    margin-top: 50px;
+    dl {
+      font-size: 18px;
+      margin: 0 0 0 50px;
+    }
+  }
+  .contact {
+    span.must {
+      color: #d23939;
+      margin: 0 5px;
+    }
+    p {
+      margin: 0 0 50px;
+    }
+    input,textarea {
+      box-sizing: border-box;
+      padding: 5px;
+      border: solid 1px #ccc;
+    }
+    input[name="email"] {
+      width: 50%;
+    }
+    textarea[name="contact"] {
+      width: 100%;
+    }
+    .submit {
+      margin: 10px 0;
+      text-align: center;
+    }
+    input[type="submit"] {
+      background: #7f6666;
+      padding: 20px;
+      width: 300px;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+  footer {
+    background: #ede6e6;
+    padding: 20px;
+    ul {
+      margin: 0 0 5px;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-end;
+      li {
+       margin: 0 0 0 20px;
+        a,a:link,a:visited {
+          text-decoration: none;
+          font-size: 13px;
+          color: #000;
+        }
+        a:hover {
+         color: #888;
+        }
+      }
+    }
+    p {
+      margin: 0;
+      text-align: right;
+      color: #888;
+    }
+  }
+  .sitemap {
+    ul {
+      margin-top: 50px;
+    }
+    li {
+      margin: 0 0 20px;
+    }
+  }
+}
+//
+//
+//section.rings{
+//  line-height: 1.7;
+//  font-size: 16px;
+//  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+//  color: #000;
+//  a,
+//  a:link {
+//    color: #3585b7;
+//  }
+//  a:visited {
+//    color: #6252B7;
+//  }
+//  a:hover {
+//    text-decoration: none;
+//    color: #555;
+//  }
+//  /* header */
+//  header {
+//    display: flex;
+//  }
+//  header h1 {
+//    margin: 25px 0 0 20px;
+//  }
+//  header nav {
+//    margin: 0 0 0 auto;
+//  }
+//  header nav ul {
+//    list-style-type: none;
+//    margin: 20px 0;
+//    padding: 0;
+//    display: flex;
+//  }
+//  header nav ul li a,
+//  header nav ul li a:link,
+//  header nav ul li a:visited {
+//    display: block;
+//    padding: 10px 15px;
+//    text-decoration: none;
+//    color: #000;
+//  }
+//  header nav ul li a:hover {
+//    color: #888;
+//  }
+//
+
+//  /* main */
+//  main .inner {
+//    width: 990px;
+//    margin: 50px auto;
+//  }
+//  main h2 {
+//    margin: 50px 0 20px;
+//    font-weight: normal;
+//    font-size: 25px;
+//    color: #7f6666;
+//  }
+//  main p {
+//    margin: 0 0 15px;
+//  }
+//  main dl {
+//    width: 100%;
+//  }
+//  main dl dt {
+//    float: left;
+//    clear: both;
+//    padding: 10px 0;
+//    color: #998484;
+//  }
+//  main dl dd {
+//    border-bottom: solid 1px #ccc;
+//    margin: 0;
+//    padding: 10px 0 10px 15%;
+//  }
+//  main .title {
+//    padding: 50px;
+//    background: #f4e3e3;
+//  }
+//  main .title h1 {
+//    margin: 0;
+//    line-height: 1;
+//    font-size: 45px;
+//    color: #7f6666;
+//  }
+//  main .title ol {
+//    list-style-type: none;
+//    margin: 20px 0 0;
+//    padding: 0;
+//    display: flex;
+//  }
+//  main .title ol li {
+//    font-size: 13px;
+//  }
+//  main .title ol li::after {
+//    content: ">";
+//    margin: 0 5px 0 10px;
+//  }
+//  main .title ol li:last-child::after {
+//    content: none;
+//  }
+//  main ul {
+//    margin: 0 0 60px;
+//    padding: 0 0 0 20px;
+//  }
+//
+//  /* home */
+//  .home main .visual {
+//    background: url(rings/visual.jpg) no-repeat center top;
+//    height: 550px;
+//    padding: 200px 50px 50px;
+//    box-sizing: border-box;
+//  }
+//  .home main .visual p {
+//    color: #7f6666;
+//  }
+//  .home main .visual p.catch {
+//    font-size: 45px;
+//  }
+//  .home main section {
+//    display: flex;
+//    margin-top: 50px;
+//  }
+//  .home main section div {
+//    padding: 0 40px 0 0;
+//  }
+//  .home main section:first-child {
+//    flex-direction: row-reverse;
+//  }
+//  .home main section:first-child div {
+//    padding: 0 0 0 40px;
+//  }
+//
+//  /* guide */
+//  .guide main .about {
+//    display: flex;
+//  }
+//  .guide main .about div {
+//    width: 50%;
+//  }
+//  .guide main dl {
+//    font-size: 18px;
+//  }
+//  .guide main dd {
+//    border: none;
+//    padding-left: 5em;
+//  }
+//  .guide main table {
+//    width: 100%;
+//    text-align: center;
+//  }
+//  .guide main table,
+//  .guide main table th,
+//  .guide main table td {
+//    border: solid 1px #ccc;
+//    border-collapse: collapse;
+//  }
+//  .guide main table th,
+//  .guide main table td {
+//    padding: 5px;
+//  }
+//  .guide main table th {
+//    background: #f7f0f0;
+//    color: #998484;
+//  }
+//
+//  /* cast */
+//  .cast main .cast-profile {
+//    display: flex;
+//    margin-top: 50px;
+//  }
+//  .cast main .cast-profile dl {
+//    margin: 0 0 0 50px;
+//    font-size: 18px;
+//  }
+//
+//  /* contact */
+//  .contact main .must {
+//    margin: 0 5px;
+//    color: #d23939;
+//  }
+//  .contact main p {
+//    margin: 0 0 50px;
+//  }
+//  .contact main dl dd {
+//    padding-left: 15em;
+//  }
+//  .contact main input,
+//  .contact main textarea {
+//    border: solid 1px #ccc;
+//    padding: 5px;
+//    box-sizing: border-box;
+//  }
+//  .contact main input[name="email"] {
+//    width: 50%;
+//  }
+//  .contact main textarea {
+//    width: 100%;
+//  }
+//  .contact main .submit {
+//    margin: 10px 0;
+//    text-align: center;
+//  }
+//  .contact main input[type="submit"] {
+//    background: #7f6666;
+//    padding: 20px;
+//    width: 300px;
+//    cursor: pointer;
+//    font-weight: bold;
+//    font-size: 18px;
+//    color: #fff;
+//  }
+//  .contact main input[type="submit"]:hover {
+//    opacity: 0.8;
+//  }
+//
+//  /* sitemap */
+//  .sitemap main ul {
+//    margin-top: 50px;
+//  }
+//  .sitemap main ul li {
+//    margin: 0 0 20px;
+//  }
+//}
+///* footer */
+//footer {
+//  background: #ede6e6;
+//  padding: 20px;
+//}
+//footer ul {
+//  list-style-type: none;
+//  margin: 0 0 5px;
+//  padding: 0;
+//  display: flex;
+//  justify-content: flex-end;
+//}
+//footer ul li {
+//  margin: 0 0 0 20px;
+//}
+//footer ul li a,
+//footer ul li a:link,
+//footer ul li a:visited {
+//  text-decoration: none;
+//  font-size: 13px;
+//  color: #000;
+//}
+//footer ul li a:hover {
+//  color: #888;
+//}
+//footer p {
+//  margin: 0;
+//  text-align: right;
+//  color: #888;
+//}
+//section.rings {
+//  line-height: 1.7;
+//  font-size: 16px;
+//  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+//  color: #000;
+//  a {
+//    &:link {
+//      color: #3585b7;
+//    }
+//    &:visited {
+//      color: #6252B7;
+//    }
+//    &:hover {
+//      text-decoration: none;
+//      color: #555 ;
+//    }
+//  }
+//  header {
+//    display: flex;
+//    h1 {
+//      margin: 25px 0 0 20px;
+//    }
+//    nav {
+//      margin: 0 0 0 auto ;
+//      ul {
+//        list-style-type: none;
+//        display: flex;
+//        padding: 0;
+//        margin: 20px 0;
+//        li {
+//          a,a:link,a:visited{
+//            display: block;
+//            text-decoration: none;
+//            color:#000;
+//            padding: 10px 15px;
+//          }
+//          a:hover {
+//            color:#888;
+//          }
+//        }
+//      }
+//    }
+//  }
+//  main {
+//    .title {
+//      background: #f4e3e3;
+//      padding: 50px;
+//      h1 {
+//        line-height: 1;
+//        color: #7f6666;
+//        margin: 0;
+//        font-size: 45px;
+//      }
+//      ol {
+//        display: flex;
+//        list-style-type: none;
+//        padding: 0;
+//        margin: 20px 0 0 ;
+//        li {
+//          font-size: 13px;
+//        }
+//        li::after{
+//          content: "<";
+//          margin: 0 5px 0 10px;
+//        }
+//        li:last-child::after {
+//          content: none;
+//        }
+//      }
+//    }
+//    .inner {
+//      margin: 50px auto;
+//      width: 990px;
+//    }
+//    ul {
+//      margin: 0 0 60px;
+//      padding: 0 0 0 20px;
+//    }
+//    dl {
+//      width:100% ;
+//      dt {
+//        float: left;
+//        clear: both;
+//        color:#998484 ;
+//        padding: 10px 0;
+//      }
+//      dd {
+//        border-bottom: 1px solid #ccc;
+//        padding: 10px 0px 10px 15%;
+//        margin: 0;
+//      }
+//    }
+//    p {
+//      margin: 0 0 15px;
+//    }
+//    h2 {
+//      font-weight: normal;
+//      font-size: 25px;
+//      color: #7f6666;
+//      margin: 50px 0 20px;
+//    }
+//  }
+//  .sitemap {
+//    main {
+//      ul {
+//        margin-top: 50px;
+//        li {
+//          margin: 0 0 20px;
+//        }
+//      }
+//    }
+//  }
+//  .cast {
+//    main {
+//      .cast-profile {
+//        display: flex;
+//        margin-top: 50px;
+//        dl {
+//          font-size: 18px;
+//          margin: 0 0 0 50px;
+//        }
+//      }
+//    }
+//  }
+//  .guide {
+//    main {
+//      .about {
+//        display: flex;
+//        div {
+//          width: 50%;
+//        }
+//      }
+//      dl {
+//        font-size: 18px;
+//        dd {
+//          border: none;
+//          padding-left: 5rem;
+//        }
+//      }
+//      table {
+//        text-align: center;
+//        width: 100%;
+//        &,th,td {
+//          border-collapse: collapse;
+//          border: solid 1px #ccc;
+//        }
+//        th,td {
+//          padding: 5px;
+//        }
+//        th {
+//          background: #f7f0f0;
+//          color: #998484;
+//        }
+//      }
+//    }
+//  }
+//  .home {
+//    .visual {
+//      background: url("rings/visual.jpg") no-repeat center top;
+//      height: 550px;
+//      box-sizing: border-box;
+//      padding: 200px 50px 50px;
+//      p {
+//        color: #7f6666;
+//        &.catch {
+//          font-size: 45px;
+//        }
+//      }
+//    }
+//    main {
+//      section {
+//        display: flex;
+//        margin-top: 50px;
+//        div {
+//          padding: 0 40px 0 0;
+//        }
+//        &:first-child {
+//          flex-direction: row-reverse;
+//          div {
+//            padding: 0 0 0 40px;
+//          }
+//        }
+//      }
+//    }
+//  }
+//  .contact {
+//    main {
+//      .must {
+//        color: #d23939;
+//        margin: 0 5px;
+//      }
+//      p {
+//        margin: 0 0 50px;
+//      }
+//      dl dd {
+//        padding-left: 15rem;
+//      }
+//      input,
+//      textarea {
+//        border: solid 1px #ccc;
+//        box-sizing: border-box;
+//        padding: 5px;
+//      }
+//      input[name="email"]{
+//        width: 50%;
+//      }
+//      textarea {
+//        width: 100%;
+//      }
+//      .submit {
+//        text-align: center;
+//        margin: 10px 0;
+//      }
+//      input[type="submit"] {
+//        background: #7f6666;
+//        color: #fff;
+//        font-weight: bold;
+//        cursor: pointer;
+//        font-size: 18px;
+//        width: 300px;
+//        padding: 20px;
+//      }
+//    }
+//  }
+//  footer {
+//    background: #ede6e6;
+//    padding: 20px;
+//    ul {
+//      list-style-type: none;
+//      display: flex;
+//      justify-content: flex-end;
+//      padding: 0;
+//      margin: 0 0 5px;
+//      li {
+//        margin: 0 0 0 20px;
+//        a,a:link,a:visited {
+//          text-decoration: none;
+//          color: #000;
+//          font-size: 13px;
+//        }
+//        a:hover {
+//          color: #888;
+//        }
+//      }
+//    }
+//    p {
+//      text-align: right;
+//      color: #888;
+//      margin: 0;
+//    }
+//  }
+//}
